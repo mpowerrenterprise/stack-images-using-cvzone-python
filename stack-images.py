@@ -1,0 +1,20 @@
+import cvzone
+import cv2
+
+cap = cv2.VideoCapture(0)
+cap.set(3, 1280)
+cap.set(4, 720)
+
+while True:
+    success, img = cap.read()
+    imgGray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    imageHSV = cv2.cvtColor(img, cv2.COLOR_BGR2HSV )
+    im_bgr = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+    imgList = [img, imageHSV, imgGray, img, im_bgr, im_bgr,imageHSV, img, im_bgr]
+    stackedImg = cvzone.stackImages(imgList, 3, 0.3)
+
+    cv2.imshow("stackedImg", stackedImg)
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+cap.release()
+cv2.destroyAllWindows()
