@@ -1,4 +1,4 @@
-# Stack images in a frame
+# Stack Images using CV Zone Python
 
 ## Introduction
 
