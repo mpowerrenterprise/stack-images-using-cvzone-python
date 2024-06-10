@@ -1,4 +1,4 @@
-# STACK IMAGES USING CV ZONE PYTHON
+# Stack Images Using CvZone Python
 
 ## Introduction
 
@@ -53,7 +53,7 @@ Python is the main programming language of this prototype, OpenCV and CVzone are
 
 ![](github-readme-content/demo.gif)
 
-# CONTACT
+# Contact
 
 ### Website: 
 
